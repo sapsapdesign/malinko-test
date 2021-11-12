@@ -10,7 +10,6 @@ describe("Gilded Rose", function() {
   it("should return the right sellIn and quality for Sulfuras", function() {
     const gildedRose = new Shop([new Item("Sulfuras, Hand of Ragnaros", -1, 6)]);
     const items = gildedRose.updateQuality();
-    console.log((items));
     expect(items[0].sellIn).toBe(-2);
     expect(items[0].quality).toBe(80);
   });
